@@ -1,0 +1,52 @@
+#Input:
+player_one = (input("Choose Rock, Paper, Scissors, Lizard or Spock Player One: "))
+import random
+player_two = random.choice(['Rock','Paper','Scissors','Lizard','Spock'])
+
+#Processing 
+if player_one == player_two:
+    print("Tie!") 
+elif player_one == "Paper" and player_two == "Rock":
+    print("Paper covers rock!")
+elif player_one == "Rock" and player_two == "Paper":
+        print("Paper covers rock!")
+elif player_one == "Scissors" and player_two == "Paper":
+        print("Scissors covers paper!") 
+elif player_one == "Lizard" and player_two == "Paper": 
+        print("Lizard eats paper!") 
+elif player_one == "Spock" and player_two == "Paper":
+        print("Paper disproves Spock!")
+elif player_one == "Scissors" and player_two == "Lizard":
+        print("Scissors beheads lizard!")
+elif player_one == "Spock" and player_two == "Scissors":
+        print("Spock smashes scissors") 
+elif player_one == "Spock" and player_two == "Rock":
+        print("Spock vaporises rock")
+elif player_one == "Lizard" and player_two == "Spock":
+        print("Lizard poisions Spock")
+elif player_one == "Rock" and player_two == "Scissors":
+        print("Rock demolishes scissors")
+elif player_one == "Rock" and player_two == "Lizard":
+        print ("Rock squishes lizard")
+elif player_one == "Spock" and player_two == "Lizard":
+        print ("Lizard poisions Spock")
+elif player_two == "Spock" and player_one == "Scissors": 
+        print("Spock smashes Scissiors")
+elif player_two == "Spock" and player_one == "Rock":
+        print("Spock vaporized Rock")
+elif player_two == "Lizard" and player_one == "Spock":
+        print("Lizard posioned Spock")
+elif player_two == "Lizard" and player_one == "Paper":
+        print("Lizard eats Paper")
+elif player_two == "Paper" and player_one == "Spock":
+        print("Paper disproves Spock")
+elif player_two == "Paper" and player_one == "Rock":
+        print("Paper covers Rock")
+elif player_two == "Rock" and player_one == "Scissors":
+        print("Rock crushed Scissors")
+elif player_two == "Rock" and player_one == "Lizard":
+        print("Rock crushed Lizard")
+elif player_two == "Scissors" and player_one == "Lizard":
+        print("The Lizard was beheaded by the safty scissors")
+print (("Player Two's Pick:"), player_two)
+
